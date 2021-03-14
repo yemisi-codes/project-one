@@ -1,0 +1,23 @@
+@import "variables";
+
+@mixin headerContent($headerImg) {
+    background-image: $headerImg;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    // font-family: $headerFont;
+    // font-size: 46px;
+    // line-height: 24px;
+    // letter-spacing: 1.1px;
+    // text-transform: uppercase;
+}
+
+
+@mixin fontSize($fontSize) {
+    font-size: $fontSize;
+    font-family: $headerFont;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    line-height: 24px;
+}

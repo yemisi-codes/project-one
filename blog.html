@@ -6,13 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
     <script src="https://kit.fontawesome.com/216c261b74.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Raleway:wght@600&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <h1>Delicious</h1>
+    
 
     <!-- Wrapper -->
     <div class="wrapper">
     <header>
+        <h1>Delicious</h1>
     <nav class="header__nav">
         <ul>
             <li class="nav__link"><a href="index.html">Home</a></li>
@@ -38,7 +42,7 @@
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum beatae quod doloremque eos omnis totam architecto quidem autem recusandae reprehenderit?</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ratione iste velit nesciunt officiis provident, perferendis deserunt quibusdam numquam deleniti nulla et reprehenderit? Est doloremque, aliquam nisi explicabo qui cumque.</p>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque rem sed nam? Itaque, dignissimos iure! Atque eum debitis dolorum laborum.</p>
-            <h6>Tags:</h6> <p>Recipes, Chicken Pineapple Mexican</p>
+            <h6>Tags:</h6> <p>Recipes, Chicken, Pineapple, Mexican</p>
             <h6>Share:</h6>
             <a href="#"><i class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fab fa-twitter"></i></a>
@@ -50,32 +54,68 @@
     <section class="SectionTwo">
        <div> 
            <img src="assets/blog-2.jpeg" alt="portrait of blonde white woman">
-           <h3>Sally Lucas</h3>
+           <h4>Sally Lucas</h4>
            <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea letttuce kohlrabi amaranth water spinache avocado daikon napa cabbage asparagus winter purslane kale. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo et itaque deserunt. Esse reiciendis rem repellendus. Harum cumque sapiente facilis impedit consectetur alias iure dolorum aliquam dicta ad! Unde, accusamus.</p>
        </div>
     </section>
     
     <!-- Section Three (Related Posts) -->
     <section class="SectionThree">
-        <h3>Related Posts</h3>
+        <h4>Related Posts</h4>
         <div class="SectionThree__containerOne">
             <img src="assets/blog-3.jpeg" alt="pink cake on platter">
+            <h3>How to Bake the Perfect Cake</h3>
+            <p>July 11, 2020 | by Admin in |<a href="#">Recipes</a></p>
         </div>
         <div class="SectionThree__containerTwo">
             <img src="assets/blog-4.jpeg" alt="floral cupcakes">
+            <h3>Floral Cupcakes</h3>
+            <p>July 19, 2020 | by Admin | in <a href="#">Recipes</a></p>
         </div>
         <div class="SectionThree__containerThree">
             <img src="assets/blog-5.jpeg" alt="smoked salmon dish">
+            <h3>Single Post with Image</h3>
+            <p>July 22, 2020 | by Admin | in <a href="#">Recipes</a></p>
         </div>
 
     </section>
 
     <!-- Section Four (Comments and Form) -->
     <section class="SectionFour">
+        <h4>02 Comments</h4>
+        <div class="SectionFour__commentOne">
+            <img src="assets/blog-6.jpeg" alt="portrait of commenter">
+            <p><span class="name">Lucatony Avaro -</span><span class="occupation">Web Developer</span></p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem excepturi quas, eligendi assumenda totam aspernatur?</p>
+            <p class="date">July 17, 2020 at 15 hours ago</p>
+        </div>
+        <div class="SectionFour__commentTwo">
+            <img src="assets/blog-7.jpeg" alt="portrait of commenter">
+            <p><span class="name">Brian Hudson -</span><span class="occupation">Web Developer</span></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae est quod amet corporis velit natus.</p>
+            <p class="date">July 17, 2020 at 15 hours ago</p>
+
+            <h4>Leave a Comment</h4>
+            <p>Your email address will not be published. Required fields are marked *</p>
+            <form action="contact">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required="true" placeholder="Name *">
+
+                <label for="email">Email:</label>
+                <input type="text" name="userEmail" id="userEmail" required="true" placeholder="Email *">
+
+                <label for="yourWebsite">Your Website:</label>
+                <input type="text" name="userWebsite" id="userWebsite" placeholder="Your Website">
+        
+                <textarea name="userComment" id="userComment" cols="30" rows="10" placeholder="Comment"></textarea>
+                <button type="submit">Submit Comment</button>
+            </form>
+        </div>
 
     </section>
 
-    <!-- Section Five (Contact) -->
+    <!-- Footer (Contact Info) -->
+    <footer>
     <section class="SectionFive">
         <div class="SectionFive__columnOne">
             <h2>Delicious</h2>
@@ -97,14 +137,12 @@
         </div>
         <div class="SectionFive__form">
             <h2>Subscribe Now</h2>
-            <p>Get all of our newest recipes immediately in your inbox!</p>
-            <form action=""></form>
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-
+            <form action="email">
+                <input type="text" name="userEmail" id="userEmail" placeholder="Enter your email"><button type="submit"><a href="#"><i class="fas fa-long-arrow-alt-right"></i></a></button>
+            </form>
         </div>
     </section>
+</footer>
 
 </div>
     

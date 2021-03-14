@@ -1,0 +1,7 @@
+@import "header";
+@import "mixins";
+@import "variables";
+
+header {
+    @include headerContent(url(../assets/blog-1.jpeg));
+}
