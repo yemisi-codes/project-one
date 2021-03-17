@@ -1,7 +1,68 @@
 @import "header";
 @import "mixins";
 @import "variables";
+@import "footer";
 
-header {
+.contactHeader {
     @include headerContent(url(../assets/contact-1.jpeg));
+}
+
+a {
+    text-decoration: none;
+}
+
+input,
+textarea {
+    font-family: $bodyText;
+    background: $backgroundColor;
+    color: $bodyTextColor;
+    border: none;
+}
+
+textarea {
+    outline: none;
+    resize: none;
+    overflow: auto;
+}
+
+.sectionOneContact {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sectionOneContact h3 {
+        @include headerFont(20px);
+}
+
+.sectionOneContact h4 {
+    @include headerFont(17px);
+}
+
+.sectionOneContact__form {
+    width: 70%;
+}
+
+aside {
+    width: 25%;
+}
+
+.sectionOneContact__form button {
+    width: 40%;
+    background: white;
+    color: $mediumGreen;
+    font-family: $headerFont;
+    padding: 10px;
+    font-size: 12px;
+    text-transform: uppercase;
+    border: none;
+   
+}
+
+.sectionOneContact aside {
+    background: $backgroundColor;
+}
+
+.sectionOneContact p {
+    color: $bodyTextColor;
+    font-family: $bodyText;
 }

@@ -1,8 +1,143 @@
 @import "header"; 
 @import "mixins";
 @import "variables";
+@import "footer";
 
 
-header {
+.homeHeader {
     @include headerContent(url(../assets/home-1.jpeg));
 }
+
+p {
+    font-family: $bodyText;
+}
+
+.greenLine hr {
+    width: 60px;
+    color: $mediumGreen;
+    height: 2px;
+}
+
+.sectionOne h2,
+.sectonTwo h3,
+.sectionThree h2,
+.sectionFive h2 {
+    color: $primary;
+}
+
+.sectionOne__text h2,
+.sectionThree h2,
+.sectionFive h2 {
+    @include headerFont(20px);
+}
+
+.sectionOne p,
+.sectionTwo p,
+.sectionThree p {
+    color: $bodyTextColor;
+}
+
+
+// Section One - Most Popular Recipes
+.sectionOne__container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    // grid-template-rows: 700px 700px;
+    grid-gap: 100px;
+    width: 100%;
+}
+
+.sectionOne__text {
+    padding-top: 25%;
+    padding-left: 15%;
+    text-align: center;
+    width: 100%;
+}
+
+.recipeButton {
+    padding-top: 30px;
+}
+
+.sectionOne img {
+    width: 100%;
+}
+
+.sectionOne span {
+    color: $mediumGreen;
+    font-family: $headerFont;
+    font-size: 20px;
+}
+
+.sectionOne button {
+    @include greenButton(40%);
+}
+
+// Section Two
+.sectionTwo__container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    // grid-template-rows: 500px;
+    grid-gap: 100px;
+}
+
+.sectionTwo img {
+    width: 100%;
+}
+
+.sectionTwo h3 {
+    @include headerFont(15px);
+}
+
+.sectionTwo__text {
+    background: $backgroundColor;
+}
+
+// Section Three - Our Restaurants 
+.sectionThree {
+    position: relative;
+    padding: 100px;
+    text-align: center;
+}
+
+.sectionThree__logo {
+    z-index: 10;
+    position: absolute;
+    top: 10;
+    left: 100;
+}
+
+// Section Four - Gallery
+.sectionFour__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 50px;
+}
+
+.imgOne,
+.imgTwo,
+.imgThree,
+.imgFour,
+.imgFive,
+.imgSix {
+    width: 75%;
+}
+
+// Section Five - Hungry Clients
+.sectionFive {
+    background: $lightGreen;
+    padding: 150px;
+    text-align: center;
+}
+
+.sectionFive p {
+    font-family: $bodyText;
+    font-style: italic;
+}
+
+.leftArrow,
+.rightArrow {
+    font-size: 30px;
+    color: $backgroundColor;
+    margin: 10px;
+}
+

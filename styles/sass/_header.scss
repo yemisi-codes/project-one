@@ -3,7 +3,7 @@
 
 
 header h1 {
-    @include fontSize(46px);
+    @include headerFont(46px);
 }
 
 nav { 
@@ -19,6 +19,10 @@ nav {
                     color: $primary;
                     font-family: $headerFont;
                     margin: 10px;
+
+                    &:hover {
+                        color: $mediumGreen;
+                    }
                 }
             }
         }

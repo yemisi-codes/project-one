@@ -1,7 +1,141 @@
 @import "header";
 @import "mixins";
 @import "variables";
+@import "footer";
 
-header {
+
+.blogHeader {
     @include headerContent(url(../assets/blog-1.jpeg));
+}
+
+hr {
+    color: $backgroundColor;
+    width: 90%;
+    height: 1px;
+}
+
+// Section One - Pineapple Chicken Recipe
+.sectionOneBlog {
+    padding: 20px;
+}
+.sectionOneBlog h2 {
+    @include headerFont(30px);
+    color: $primary;
+}
+
+.sectionOneBlog p {
+    font-family: $bodyText;
+    color: $bodyTextColor;
+    font-size: 15px;
+}
+
+.sectionOneBlog h4 {
+    @include headerFont(15px);
+    color: $primary;
+}
+
+.sectionOneBlog a {
+    color: $bodyTextColor;
+    text-decoration: none;
+}
+
+// Section Two - Author Bio
+.sectionTwoBlog {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sectionTwoBlog h4,
+.sectionThreeBlog h4,
+.sectionFourBlog h4 {
+    @include headerFont(15px);
+    color: $primary;
+}
+
+.sectionTwoBlog p {
+    color: $bodyTextColor;
+}
+
+.sectionTwoBlog__img {
+    width: 25%;
+}
+
+.sectionTwoBlog__text {
+    background: $backgroundColor;
+    width: 75%;
+}
+
+// Section Three - Related Posts
+.sectionThreeBlog {
+    display: flex;
+    flex-wrap: wrap;
+}
+.sectionThreeBlog h3 {
+    @include headerFont(17px);
+    color: $primary;
+}
+
+.sectionThreeBlog a {
+    text-decoration: none;
+    color: $primary;
+}
+
+.sectionThreeBlog__containerOne,
+.sectionThreeBlog__containerTwo,
+.sectionThreeBlog__containerThree {
+    width: 30%;
+}
+
+.sectionThreeBlog p {
+    font-family: $bodyText;
+    color: $bodyTextColor;
+}
+.sectionThreeBlog span {
+    font-family: $headerFont;
+    color: $primary;
+}
+
+// Section Four (Comments and Form)
+.sectionFourBlog__text {
+    background: $backgroundColor;
+    color: $primary;
+    font-family: $bodyText;
+}
+
+.sectionFourBlog__comment {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sectionFourBlog__text {
+    width: 75%;
+}
+
+.sectionFourBlog__img {
+    width: 25%;
+}
+
+.name,
+.date {
+    font-family: $headerFont;
+}
+
+.occupation {
+    font-family: $bodyText;
+}
+
+input,
+textarea {
+    font-family: $bodyText;
+    color: $backgroundColor;
+}
+
+textarea {
+    outline: none;
+    resize: none;
+    overflow: auto;
+}
+
+.sectionFourBlog button {
+    @include greenButton(40%);
 }

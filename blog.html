@@ -12,10 +12,9 @@
 </head>
 <body>
     
-
-    <!-- Wrapper -->
-    <div class="wrapper">
-    <header>
+    <header class="blogHeader">
+         <!-- Wrapper -->
+        <div class="wrapper">
         <h1>Delicious</h1>
     <nav class="header__nav">
         <ul>
@@ -31,10 +30,11 @@
     <a><i class="fas fa-shopping-bag"></i></div></a>
     <a><i class="fas fa-search"></i></a>
 </header>
+
 <!-- Section One (Pineapple Chicken Recipe)
 -->
-    <section class="SectionOne">
-        <div>
+    <section class="sectionOneBlog">
+        <!-- <div></div> -->
             <h2>Pineapple Chicken</h2>
             <p>Posted at July 11, 2020 | by Admin | in <a href="#">Recipes</a></p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque blanditiis soluta fuga corrupti aut consequuntur aliquam ipsam facilis? Voluptatem, minima.</p>
@@ -42,58 +42,74 @@
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum beatae quod doloremque eos omnis totam architecto quidem autem recusandae reprehenderit?</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ratione iste velit nesciunt officiis provident, perferendis deserunt quibusdam numquam deleniti nulla et reprehenderit? Est doloremque, aliquam nisi explicabo qui cumque.</p>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque rem sed nam? Itaque, dignissimos iure! Atque eum debitis dolorum laborum.</p>
-            <h6>Tags:</h6> <p>Recipes, Chicken, Pineapple, Mexican</p>
-            <h6>Share:</h6>
+            <hr>
+            <h4>Tags:</h4> <p>Recipes, Chicken, Pineapple, Mexican</p>
+            <h4>Share:</h4>
             <a href="#"><i class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fab fa-twitter"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
-        </div>
+            <hr>
+        <!-- </div> -->
     </section>
 
     <!-- Section Two (Author bio) -->
-    <section class="SectionTwo">
-       <div> 
+    <section class="sectionTwoBlog">
+       <div class="sectionTwoBlog__img"> 
            <img src="assets/blog-2.jpeg" alt="portrait of blonde white woman">
+       </div>
+       <div class="sectionTwoBlog__text">
            <h4>Sally Lucas</h4>
            <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea letttuce kohlrabi amaranth water spinache avocado daikon napa cabbage asparagus winter purslane kale. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo et itaque deserunt. Esse reiciendis rem repellendus. Harum cumque sapiente facilis impedit consectetur alias iure dolorum aliquam dicta ad! Unde, accusamus.</p>
        </div>
     </section>
     
     <!-- Section Three (Related Posts) -->
-    <section class="SectionThree">
+    <hr>
+    <section class="sectionThreeBlog">
+        
         <h4>Related Posts</h4>
-        <div class="SectionThree__containerOne">
+        <div class="sectionThreeBlog__containerOne">
             <img src="assets/blog-3.jpeg" alt="pink cake on platter">
             <h3>How to Bake the Perfect Cake</h3>
-            <p>July 11, 2020 | by Admin in |<a href="#">Recipes</a></p>
+            <p>July 11, 2020 | by <span>Admin</span> | in <span><a href="#">Recipes</a></span></p>
         </div>
-        <div class="SectionThree__containerTwo">
+        <div class="sectionThreeBlog__containerTwo">
             <img src="assets/blog-4.jpeg" alt="floral cupcakes">
             <h3>Floral Cupcakes</h3>
-            <p>July 19, 2020 | by Admin | in <a href="#">Recipes</a></p>
+            <p>July 19, 2020 | by <span>Admin</span> | in <span><a href="#">Recipes</a></span></p>
         </div>
-        <div class="SectionThree__containerThree">
+        <div class="sectionThreeBlog__containerThree">
             <img src="assets/blog-5.jpeg" alt="smoked salmon dish">
             <h3>Single Post with Image</h3>
-            <p>July 22, 2020 | by Admin | in <a href="#">Recipes</a></p>
+            <p>July 22, 2020 | by <span>Admin</span> | in <span><a href="#">Recipes</a></span></p>
         </div>
-
+       
     </section>
+    <hr>
 
     <!-- Section Four (Comments and Form) -->
-    <section class="SectionFour">
+    <section class="sectionFourBlog">
         <h4>02 Comments</h4>
-        <div class="SectionFour__commentOne">
-            <img src="assets/blog-6.jpeg" alt="portrait of commenter">
-            <p><span class="name">Lucatony Avaro -</span><span class="occupation">Web Developer</span></p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem excepturi quas, eligendi assumenda totam aspernatur?</p>
-            <p class="date">July 17, 2020 at 15 hours ago</p>
+        <div class="sectionFourBlog__comment">
+            <div class="sectionFourBlog__img">
+                <img src="assets/blog-6.jpeg" alt="portrait of commenter">
+            </div>
+            <div class="sectionFourBlog__text">
+                <p><span class="name">Lucatony Avaro</span><span class="occupation"> - Web Developer</span></p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem excepturi quas, eligendi assumenda totam aspernatur?</p>
+                <p class="date">July 17, 2020 at 15 hours ago</p>
+            </div>
         </div>
-        <div class="SectionFour__commentTwo">
-            <img src="assets/blog-7.jpeg" alt="portrait of commenter">
-            <p><span class="name">Brian Hudson -</span><span class="occupation">Web Developer</span></p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae est quod amet corporis velit natus.</p>
-            <p class="date">July 17, 2020 at 15 hours ago</p>
+        <div class="sectionFourBlog__comment">
+            <div class="sectionFourBlog__img">
+                <img src="assets/blog-7.jpeg" alt="portrait of commenter">
+            </div>
+            <div class="sectionFourBlog__text">
+                <p><span class="name">Brian Hudson</span><span class="occupation"> - Web Developer</span></p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae est quod amet corporis velit natus.</p>
+                <p class="date">July 17, 2020 at 15 hours ago</p>
+            </div>
+        </div>
 
             <h4>Leave a Comment</h4>
             <p>Your email address will not be published. Required fields are marked *</p>
@@ -110,40 +126,57 @@
                 <textarea name="userComment" id="userComment" cols="30" rows="10" placeholder="Comment"></textarea>
                 <button type="submit">Submit Comment</button>
             </form>
-        </div>
+        
 
     </section>
 
-    <!-- Footer (Contact Info) -->
+
+    <!-- Footer (Contact)-->
     <footer>
-    <section class="SectionFive">
-        <div class="SectionFive__columnOne">
+        <div class="footerContainer">
+        <div class="footer__columnOne">
             <h2>Delicious</h2>
             <p>Soko radicchio bunya nuts gram dulse silver beet parsnip napa cabbage lotus root sea lettuce brussels sprout cabbage.</p>
+            <hr>
             <p>A delicious Restaurant
                 Toronto, Ontario
             </p>
+            <hr>
             <p>yum@food.com</p>
+            <hr>
             <p>+1 234 567 8910</p>
         </div>
-        <div class="SectionFive__columnTwo">
+        <div class="footer__columnTwo">
             <h3>Recent Posts</h3>
-            <p><a href="#">Beetroot water spinach okra water</a></p>
-            <p><a href="#">Chestnut ricebean pea catsear courgette</a></p>
-            <p><a href="#">Summer purslane spinach arugula pea</a></p>
-            <p><a href="#">Tatsoi aubergine spring onion bush</a></p>
-            <p><a href="#">Tomato kale radicchio turnip chicory</a></p>
-            <p><a href="#">Salsify pea sprouts fava bean</a></p>
+            <p>Beetroot water spinach okra water</p>
+            <hr>
+            <p>Chestnut ricebean pea catsear courgette</p>
+            <hr>
+            <p>Summer purslane spinach arugula pea</p>
+            <hr>
+            <p>Tatsoi aubergine spring onion bush</p>
+            <hr>
+            <p>Tomato kale radicchio turnip chicory</p>
+            <hr>
+            <p>Salsify pea sprouts fava bean</p>
         </div>
-        <div class="SectionFive__form">
-            <h2>Subscribe Now</h2>
+        <div class="footer__form">
+            <h3>Subscribe Now</h3>
+            <p>Get all of our newest recipes immediately in your inbox!</p>
+            
             <form action="email">
                 <input type="text" name="userEmail" id="userEmail" placeholder="Enter your email"><button type="submit"><a href="#"><i class="fas fa-long-arrow-alt-right"></i></a></button>
             </form>
-        </div>
-    </section>
-</footer>
+            <hr>
 
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+    
+        <p>Copyrights Ⓒ 2021 by <a href="#">POLAR</a> All Rights Reserved.</p>
+    </footer>
 </div>
     
 </body>

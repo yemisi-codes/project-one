@@ -14,10 +14,27 @@
 }
 
 
-@mixin fontSize($fontSize) {
+@mixin headerFont($fontSize) {
     font-size: $fontSize;
     font-family: $headerFont;
     text-transform: uppercase;
     letter-spacing: 1.1px;
     line-height: 24px;
+}
+
+@mixin quoteText($fontSize) {
+    font-size: $fontSize;
+    font-family: $bodyText;
+    line-height: 36px;
+}
+
+@mixin greenButton($width) {
+    width: $width;
+    color: $backgroundColor;
+    background: $mediumGreen;
+    font-family: $headerFont;
+    padding: 10px;
+    font-size: 10px;
+    text-transform: uppercase;
+    border: none;
 }

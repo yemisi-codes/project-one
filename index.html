@@ -12,11 +12,12 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header>
+    <header class="homeHeader">
+         <!-- Wrapper -->
+       <div class="wrapper">
         <h1>Delicious</h1>
 
-        <!-- Wrapper -->
-        <div class="wrapper">
+     
         <nav class="header__nav">
             <ul>
                 <li class="nav__link"><a href="#">Home</a></li>
@@ -26,55 +27,60 @@
                 <li class="nav__link"><a href="blog.html">Blog</a></li>
                 <li class="nav__link"><a href="#">Shop</a></li>
                 <li class="nav__link"><a href="contact.html">Contact</a></li>
-                <a><i class="fas fa-shopping-bag"></i></div></a><a><i class="fas fa-search"></i></a>
+                <a><i class="fas fa-shopping-bag"></i></div></a>
+                <a><i class="fas fa-search"></i></a>
             </ul>
         </nav>
 
         
     </header>
+      
 
     <!-- Section One -->
-    <section class="SectionOne">
-        <div class="SectionOne__container">
-            <div class="SectionOne__text">
+    <section class="sectionOne">
+        <div class="sectionOne__container">
+            <div class="sectionOne__text">
                 <h2>Most Popular Recipes</h2>
+                <span class="greenLine"><hr></span>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dicta minus veniam numquam dolore voluptas vitae. Harum dolores atque, quisquam, ratione sint minus asperiores voluptatibus, voluptates enim recusandae autem dicta?</p>
-                <button>View Recipes</button>
+                <div class="recipeButton">
+                    <button>View Recipes</button>
+                </div>
             </div>
-            <div class="SectionOne__photo">
+            <div class="sectionOne__photo">
                 <img src="assets/home-2.jpeg" alt="purple lettuce in a bowl">
             </div>
         </div>
     </section>
 
     <!-- Section Two -->
-    <section class="SectionTwo">
-        <div class="SectionTwo__container">
-            <div class="SectionTwo__photo">
+    <section class="sectionTwo">
+        <div class="sectionTwo__container">
+            <!-- <div class="SectionTwo__photo"> -->
                 <img src="assets/home-3.jpeg" alt="taco with lime wedge beside">
-            </div>
-            <div class="SectionTwo__text">
-                <div class="SectionTwo__icon"><i class="fas fa-lemon"></i></div>
+            <!-- </div> -->
+            <div class="sectionTwo__text">
+                <div class="sectionTwo__icon"><i class="fas fa-lemon"></i></div>
                 <h3>Vegetarian</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, nam exercitationem quas voluptatum corrupti incidunt?</p>
 
-                <div class="SectionTwo__icon"><i class="fas fa-coffee"></i></div>
+                <div class="sectionTwo__icon"><i class="fas fa-coffee"></i></div>
                 <h3>Desserts</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure tempore laborum adipisci cum id mollitia!</p>
 
-                <div class="SectionTwo__icon"><i class="fas fa-leaf"></i></div>
+                <div class="sectionTwo__icon"><i class="fas fa-leaf"></i></div>
                 <h3>Salads</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, nulla? At consequuntur ipsa ullam et.</p>
 
-                <div class="SectionTwo__icon"><i class="fas fa-utensils"></i></div>
+                <div class="sectionTwo__icon"><i class="fas fa-utensils"></i></div>
                 <h3>Appetizers</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias labore expedita blanditiis voluptates, ipsum quis!</p>
 
-                <div class="SectionTwo__icon"><i class="fas fa-glass-martini"></i></div>
+                <div class="sectionTwo__icon"><i class="fas fa-glass-martini"></i></div>
                 <h3>Drinks</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor ab minima ullam perferendis commodi rem!</p>
 
-                <div class="SectionTwo__icon"><i class="fas fa-utensil-spoon"></i></div>
+                <div class="sectionTwo__icon"><i class="fas fa-utensil-spoon"></i></div>
                 <h3>Side Dishes</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae facilis odit vero voluptatem facere. Minus?</p>
             </div>
@@ -82,70 +88,86 @@
     </section>
 
     <!-- Section Three (Our Restaurants) -->
-    <section class="SectionThree">
-        <div class="SectionThree__logo"> 
+    <section class="sectionThree">
+        <div class="sectionThree__logo"> 
             <img src="assets/home-circle-text.png" alt="">
         </div>
         <div>
             <img src="assets/home-4.jpeg" alt="orange dining chairs and tables">
             <h2>Our Restaurants</h2>
+            <span class="greenLine"><hr></span>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus debitis officia placeat est mollitia eaque officiis vel.</p>
         </div>
     </section>
 
     <!-- Section Four (Gallery) -->
-    <section class="SectionFour">
-        <div class="SectionFour__photos">
-            <img src="assets/home-5.jpeg" alt="colorful green and pink dish">
-            <img src="assets/home-6.jpeg" alt="burger slider on plate">
-            <img src="assets/home-7.jpeg" alt="red onions">
-            <img src="assets/home-8.jpeg" alt="pink cake">
-            <img src="assets/home-9.jpeg" alt="blueberry scones with pink flowers beside">
-            <img src="assets/home-10.jpeg" alt="tzatziki in a bowl">
+    <section class="sectionFour">
+        <div class="sectionFour__container">
+                <img class="imgOne" src="assets/home-5.jpeg" alt="colorful green and pink dish">
+                <img src class="imgTwo" src="assets/home-6.jpeg" alt="burger slider on plate">
+                <img class="imgThree" src="assets/home-7.jpeg" alt="red onions">
+                <img class="imgFour" src="assets/home-8.jpeg" alt="pink cake">
+                <img class="imgFive" src="assets/home-9.jpeg" alt="blueberry scones with pink flowers beside">
+                <img class="imgSix" src="assets/home-10.jpeg" alt="tzatziki in a bowl">
         </div>
     </section>
 
     <!-- Section Five (Hungry Clients) -->
-    <section class="SectionFive">
+    <section class="sectionFive">
         <h2>Hungry Clients</h2>
+        <span class="greenLine"><hr></span>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis alias ad, voluptate maiores perspiciatis eligendi tempore velit esse nihil odit exercitationem dolorem libero quibusdam magnam atque impedit harum tempora saepe?</p>
+        <div class="leftArrow">
+            <i class="fas fa-chevron-left"></i>
+        </div>
+        <div class='rightArrow'>
+            <i class="fas fa-chevron-right"></i>
+        </div>
     </section>
 
     <!-- Footer (Contact)-->
     <footer>
-    <section class="SectionSix">
-        <div class="SectionSix__columnOne">
+        <div class="footerContainer">
+        <div class="footer__columnOne">
             <h2>Delicious</h2>
             <p>Soko radicchio bunya nuts gram dulse silver beet parsnip napa cabbage lotus root sea lettuce brussels sprout cabbage.</p>
+            <hr>
             <p>A delicious Restaurant
                 Toronto, Ontario
             </p>
+            <hr>
             <p>yum@food.com</p>
+            <hr>
             <p>+1 234 567 8910</p>
         </div>
-        <div class="SectionSix__columnTwo">
+        <div class="footer__columnTwo">
             <h3>Recent Posts</h3>
-            <p><a href="#">Beetroot water spinach okra water</a></p>
-            <p><a href="#">Chestnut ricebean pea catsear courgette</a></p>
-            <p><a href="#">Summer purslane spinach arugula pea</a></p>
-            <p><a href="#">Tatsoi aubergine spring onion bush</a></p>
-            <p><a href="#">Tomato kale radicchio turnip chicory</a></p>
-            <p><a href="#">Salsify pea sprouts fava bean</a></p>
+            <p>Beetroot water spinach okra water</p>
+            <hr>
+            <p>Chestnut ricebean pea catsear courgette</p>
+            <hr>
+            <p>Summer purslane spinach arugula pea</p>
+            <hr>
+            <p>Tatsoi aubergine spring onion bush</p>
+            <hr>
+            <p>Tomato kale radicchio turnip chicory</p>
+            <hr>
+            <p>Salsify pea sprouts fava bean</p>
         </div>
-        <div class="SectionSix__form">
-            <h2>Subscribe Now</h2>
+        <div class="footer__form">
+            <h3>Subscribe Now</h3>
             <p>Get all of our newest recipes immediately in your inbox!</p>
             
             <form action="email">
                 <input type="text" name="userEmail" id="userEmail" placeholder="Enter your email"><button type="submit"><a href="#"><i class="fas fa-long-arrow-alt-right"></i></a></button>
             </form>
+            <hr>
 
             <a href="#"><i class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fab fa-twitter"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
-
         </div>
-    </section>
+    </div>
     
         <p>Copyrights Ⓒ 2021 by <a href="#">POLAR</a> All Rights Reserved.</p>
     </footer>

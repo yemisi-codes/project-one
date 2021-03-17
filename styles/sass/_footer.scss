@@ -1,1 +1,66 @@
 @import "variables";
+
+footer {
+    background: $primary;
+}
+
+footer hr {
+    color: $bodyTextColor;
+    width: 90%;
+    height: 0.4px;
+}
+
+footer a {
+    text-decoration: none;
+    color: $backgroundColor;
+}
+footer h2 {
+    @include headerFont(18px);
+    color: $mediumGreen;
+}
+
+footer h3 {
+    color: $backgroundColor;
+    font-family: $headerFont;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+footer p {
+    color: $bodyTextColor;
+    font-family: $bodyText;
+    font-size: 10px;
+}
+
+// // footer {
+ 
+
+// // }
+// .Footer__columnOne,
+// .Footer__columnTwo,
+// .Footer__form {
+//     display: flex;
+
+// }
+
+// .Footer__columnOne,
+// .Footer__columnTwo,
+// .Footer__form {
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    height: 100px;
+    padding: 100px;
+
+}
+
+.footer__columnOne,
+.footer__columnTwo,
+.footer__form {
+    width: 33%;
+    // padding: 200px;
+}
+
+

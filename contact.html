@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <!-- Wrapper -->
-
-    <div class="wrapper">
-        <header>
+   
+        <header class="contactHeader">
+             <!-- Wrapper -->
+            <div class="wrapper">
             <h1>Delicious</h1>
         <nav class="header__nav">
             <ul>
@@ -31,8 +31,8 @@
     </header>
 
     <!-- Section One (Email Form) -->
-    <section class="sectionOne">
-        <div class="sectionOne__form">
+    <section class="sectionOneContact">
+        <div class="sectionOneContact__form">
             <h3>Drop Us a Line</h3>
             <form action="contact">
                 <input type="text" name="userName" id="userName" placeholder="Your Name">
@@ -41,6 +41,7 @@
                 <textarea name="userMessage" id="" cols="30" rows="10" placeholder="Message"></textarea>
                 <button type="submit"><a href="#">Send Message<i class="fas fa-long-arrow-alt-right"></i></a></button>
         </div>
+        <aside>
         <div class="sectionOne__contactDetails">
             <h3>Contact Details</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit nam deserunt facilis dolores? Blanditiis, iure deserunt laborum quasi dolorum unde!</p>
@@ -57,41 +58,59 @@
                 +1 234 567 8910
             </p>
         </div>
+    </aside>
     </section>
 
     <!-- Section Two (Image) -->
-    <section class="sectionTwo">
+    <section class="sectionTwo__contact">
         <img src="assets/contact-2.jpeg" alt="dragon fruit sliced open on a plate">
     </section>
 
-     <!-- Footer (Contact Info) -->
-     <footer>
-        <section class="SectionThree">
-            <div class="SectionThree__columnOne">
-                <h2>Delicious</h2>
-                <p>Soko radicchio bunya nuts gram dulse silver beet parsnip napa cabbage lotus root sea lettuce brussels sprout cabbage.</p>
-                <p>A delicious Restaurant
-                    Toronto, Ontario
-                </p>
-                <p>yum@food.com</p>
-                <p>+1 234 567 8910</p>
-            </div>
-            <div class="SectionThree__columnTwo">
-                <h3>Recent Posts</h3>
-                <p><a href="#">Beetroot water spinach okra water</a></p>
-                <p><a href="#">Chestnut ricebean pea catsear courgette</a></p>
-                <p><a href="#">Summer purslane spinach arugula pea</a></p>
-                <p><a href="#">Tatsoi aubergine spring onion bush</a></p>
-                <p><a href="#">Tomato kale radicchio turnip chicory</a></p>
-                <p><a href="#">Salsify pea sprouts fava bean</a></p>
-            </div>
-            <div class="SectionThree__form">
-                <h2>Subscribe Now</h2>
-                <form action="email">
-                    <input type="text" name="userEmail" id="userEmail" placeholder="Enter your email"><button type="submit"><a href="#"><i class="fas fa-long-arrow-alt-right"></i></a></button>
-                </form>
-            </div>
-        </section>
+      <!-- Footer (Contact)-->
+    <footer>
+        <div class="footerContainer">
+        <div class="footer__columnOne">
+            <h2>Delicious</h2>
+            <p>Soko radicchio bunya nuts gram dulse silver beet parsnip napa cabbage lotus root sea lettuce brussels sprout cabbage.</p>
+            <hr>
+            <p>A delicious Restaurant
+                Toronto, Ontario
+            </p>
+            <hr>
+            <p>yum@food.com</p>
+            <hr>
+            <p>+1 234 567 8910</p>
+        </div>
+        <div class="footer__columnTwo">
+            <h3>Recent Posts</h3>
+            <p>Beetroot water spinach okra water</p>
+            <hr>
+            <p>Chestnut ricebean pea catsear courgette</p>
+            <hr>
+            <p>Summer purslane spinach arugula pea</p>
+            <hr>
+            <p>Tatsoi aubergine spring onion bush</p>
+            <hr>
+            <p>Tomato kale radicchio turnip chicory</p>
+            <hr>
+            <p>Salsify pea sprouts fava bean</p>
+        </div>
+        <div class="footer__form">
+            <h3>Subscribe Now</h3>
+            <p>Get all of our newest recipes immediately in your inbox!</p>
+            
+            <form action="email">
+                <input type="text" name="userEmail" id="userEmail" placeholder="Enter your email"><button type="submit"><a href="#"><i class="fas fa-long-arrow-alt-right"></i></a></button>
+            </form>
+            <hr>
+
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+    
+        <p>Copyrights Ⓒ 2021 by <a href="#">POLAR</a> All Rights Reserved.</p>
     </footer>
     
     </div>
