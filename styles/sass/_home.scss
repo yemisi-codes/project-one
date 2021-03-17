@@ -12,6 +12,11 @@ p {
     font-family: $bodyText;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .greenLine hr {
     width: 60px;
     color: $mediumGreen;
@@ -42,8 +47,6 @@ p {
 .sectionOne__container {
     display: grid;
     grid-template-columns: 50% 50%;
-    // grid-template-rows: 700px 700px;
-    grid-gap: 100px;
     width: 100%;
 }
 
@@ -51,7 +54,7 @@ p {
     padding-top: 25%;
     padding-left: 15%;
     text-align: center;
-    width: 100%;
+    width: 90%;
 }
 
 .recipeButton {
@@ -76,12 +79,37 @@ p {
 .sectionTwo__container {
     display: grid;
     grid-template-columns: 50% 50%;
-    // grid-template-rows: 500px;
-    grid-gap: 100px;
+    
+}
+
+.sectionTwo__text {
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
 .sectionTwo img {
     width: 100%;
+}
+
+.sectionTwo__icon {
+    color: $primary;
+    size: 50px;
+    position: relative;
+}
+
+// .fas fa-lemon,
+// .fas fa-utensils,
+// .fas fa-coffee,
+// .fas fa-glass-martini,
+// .fas fa-leaf,
+// .fas fa-utensil-spoon {
+//     color: $primary;
+//     size: 50px;
+// }
+
+
+.sectionTwo__content {
+    width: 90%;
 }
 
 .sectionTwo h3 {
@@ -94,7 +122,7 @@ p {
 
 // Section Three - Our Restaurants 
 .sectionThree {
-    position: relative;
+    // position: relative;
     padding: 100px;
     text-align: center;
 }
@@ -103,24 +131,40 @@ p {
     z-index: 10;
     position: absolute;
     top: 10;
-    left: 100;
+    // left: 200;
+    left: 5;
+    right: 0;
+    width: 20%;
 }
+
+.sectionThree__content {
+  text-align: center;
+    
+}
+
+.diningImg {
+    padding-bottom: 5%;
+}
+
+// .sectionThree__text {
+    
+// }
 
 // Section Four - Gallery
 .sectionFour__container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 50px 50px;
+    grid-template-rows: 50% 50%;
 }
 
-.imgOne,
-.imgTwo,
-.imgThree,
-.imgFour,
-.imgFive,
-.imgSix {
-    width: 75%;
-}
+// .imgOne,
+// .imgTwo,
+// .imgThree,
+// .imgFour,
+// .imgFive,
+// .imgSix {
+//     width: 100%;
+// }
 
 // Section Five - Hungry Clients
 .sectionFive {
@@ -129,15 +173,43 @@ p {
     text-align: center;
 }
 
+.sectionFive p::before {
+      content: open-quote; 
+    }
+
+.sectionFive p::after {
+    content: close-quote;
+    position: absolute;
+    right: 0;
+    top: 10;
+}
+
+.sectionFive p::before,
+.sectionFive p::after {
+    color: #EEF6D1; 
+    font-size: 100px;
+    margin: 20px;
+}
+
 .sectionFive p {
     font-family: $bodyText;
     font-style: italic;
+}
+
+.arrowContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
 }
 
 .leftArrow,
 .rightArrow {
     font-size: 30px;
     color: $backgroundColor;
-    margin: 10px;
+    margin: 15px;
+   
 }
+
 

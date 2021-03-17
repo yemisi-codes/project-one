@@ -23,11 +23,11 @@
                 <li class="nav__link"><a href="#">Nutrition</a></li>
                 <li class="nav__link"><a href="blog.html">Blog</a></li>
                 <li class="nav__link"><a href="#">Shop</a></li>
-                <li class="nav__link"><a href="contact.html">Contact</a></li>
+                <li class="nav__link"><a href="#">Contact</a></li>
+                <li class="nav__link"><a><i class="fas fa-shopping-bag"></i></div></a></li>
+                <li class="nav__link"><a><i class="fas fa-search"></i></a></li>
             </ul>
         </nav>
-        <a><i class="fas fa-shopping-bag"></i></div></a>
-        <a><i class="fas fa-search"></i></a>
     </header>
 
     <!-- Section One (Email Form) -->
@@ -35,30 +35,33 @@
         <div class="sectionOneContact__form">
             <h3>Drop Us a Line</h3>
             <form action="contact">
+                <span class="sr-only"><label for="userName">Your Name:</label></span>
                 <input type="text" name="userName" id="userName" placeholder="Your Name">
+                <span class="sr-only"><label for="userEmail">Your Email:</label></span>
                 <input type="text" name="userEmail" id="userEmail" placeholder="Your Email">
-                <input type="text" name="emailSubject" id="emailSubject" placeholder="Subject">
+                <span class="sr-only"><label for="emailSubject">Subject:</label></span>
+               <input type="text" name="emailSubject" id="emailSubject" placeholder="Subject">
                 <textarea name="userMessage" id="" cols="30" rows="10" placeholder="Message"></textarea>
                 <button type="submit"><a href="#">Send Message<i class="fas fa-long-arrow-alt-right"></i></a></button>
         </div>
-        <aside>
+      
         <div class="sectionOne__contactDetails">
             <h3>Contact Details</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit nam deserunt facilis dolores? Blanditiis, iure deserunt laborum quasi dolorum unde!</p>
 
             <h4>Working Hours</h4>
-            <p><span class="workingDays">Mon - Fri:</span> 08:00am - 05:30pm</p>
-            <p>Not working on Saturday and Sunday</p>
+            <p><span class="workingDays">Mon - Fri:</span><span class="workingTime">08:00am - 05:30pm</span></p>
+            <p><span class="notWorking">Not working on Saturday and Sunday!</span></p>
 
             <h4>Contact Info</h4>
-            <p>A delicious Restaurant
-                Toronto, Ontario
+            <p>A delicious restaurant<br>
+                Toronto, Ontario<br>
             
-                yum@food.com
+                yum@food.com<br>
                 +1 234 567 8910
             </p>
         </div>
-    </aside>
+  
     </section>
 
     <!-- Section Two (Image) -->
@@ -100,17 +103,20 @@
             <p>Get all of our newest recipes immediately in your inbox!</p>
             
             <form action="email">
+                <span class="sr-only"><label for="yourEmail">Your Email:</label></span>
                 <input type="text" name="userEmail" id="userEmail" placeholder="Enter your email"><button type="submit"><a href="#"><i class="fas fa-long-arrow-alt-right"></i></a></button>
             </form>
             <hr>
 
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
+            <div class="socialMedia"> 
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
         </div>
     </div>
     
-        <p>Copyrights Ⓒ 2021 by <a href="#">POLAR</a> All Rights Reserved.</p>
+        <p class="copyright">Copyrights Ⓒ 2021 by <span class="polar"><a href="#">Polar</a></span>. All Rights Reserved.</p>
     </footer>
     
     </div>

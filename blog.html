@@ -25,35 +25,51 @@
             <li class="nav__link"><a href="#">Blog</a></li>
             <li class="nav__link"><a href="#">Shop</a></li>
             <li class="nav__link"><a href="contact.html">Contact</a></li>
+            <li class="nav__link"><a><i class="fas fa-shopping-bag"></i></div></a></li>
+            <li class="nav__link"><a><i class="fas fa-search"></i></a></li>
         </ul>
     </nav>
-    <a><i class="fas fa-shopping-bag"></i></div></a>
-    <a><i class="fas fa-search"></i></a>
 </header>
 
 <!-- Section One (Pineapple Chicken Recipe)
 -->
+<div class="blogWrapper"> 
     <section class="sectionOneBlog">
         <!-- <div></div> -->
             <h2>Pineapple Chicken</h2>
-            <p>Posted at July 11, 2020 | by Admin | in <a href="#">Recipes</a></p>
+            <p class="recipeP">Posted at July 11, 2020 | by Admin | in <a href="#">Recipes</a></p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque blanditiis soluta fuga corrupti aut consequuntur aliquam ipsam facilis? Voluptatem, minima.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, voluptatibus.</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum beatae quod doloremque eos omnis totam architecto quidem autem recusandae reprehenderit?</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ratione iste velit nesciunt officiis provident, perferendis deserunt quibusdam numquam deleniti nulla et reprehenderit? Est doloremque, aliquam nisi explicabo qui cumque.</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque rem sed nam? Itaque, dignissimos iure! Atque eum debitis dolorum laborum.</p>
+
+            <p class="recipeP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, voluptatibus.</p>
+
+            <p class="recipeP">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum beatae quod doloremque eos omnis totam architecto quidem autem recusandae reprehenderit?</p>
+
+            <p class="recipeP">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ratione iste velit nesciunt officiis provident, perferendis deserunt quibusdam numquam deleniti nulla et reprehenderit? Est doloremque, aliquam nisi explicabo qui cumque.</p>
+
+            <p class="recipeP">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque rem sed nam? Itaque, dignissimos iure! Atque eum debitis dolorum laborum.</p>
             <hr>
+            <div class="tags">
             <h4>Tags:</h4> <p>Recipes, Chicken, Pineapple, Mexican</p>
+            </div>
+            <div class="share">
             <h4>Share:</h4>
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <hr>
+            <div class="socialMediaIcon">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </div>
+            <div class="socialMediaIcon">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="socialMediaIcon">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            </div>
+            
         <!-- </div> -->
     </section>
 
     <!-- Section Two (Author bio) -->
     <section class="sectionTwoBlog">
+        <hr>
        <div class="sectionTwoBlog__img"> 
            <img src="assets/blog-2.jpeg" alt="portrait of blonde white woman">
        </div>
@@ -65,9 +81,10 @@
     
     <!-- Section Three (Related Posts) -->
     <hr>
+    
     <section class="sectionThreeBlog">
-        
         <h4>Related Posts</h4>
+        <div class="sectionThreeBlog__container">
         <div class="sectionThreeBlog__containerOne">
             <img src="assets/blog-3.jpeg" alt="pink cake on platter">
             <h3>How to Bake the Perfect Cake</h3>
@@ -83,7 +100,7 @@
             <h3>Single Post with Image</h3>
             <p>July 22, 2020 | by <span>Admin</span> | in <span><a href="#">Recipes</a></span></p>
         </div>
-       
+    </div>
     </section>
     <hr>
 
@@ -113,22 +130,24 @@
 
             <h4>Leave a Comment</h4>
             <p>Your email address will not be published. Required fields are marked *</p>
+            <div class="blogForm">
             <form action="contact">
-                <label for="name">Name:</label>
+                <span class="sr-only"><label for="name">Name:</label></span>
                 <input type="text" name="name" id="name" required="true" placeholder="Name *">
 
-                <label for="email">Email:</label>
+                <span class="sr-only"><label for="email">Email:</label></span>
                 <input type="text" name="userEmail" id="userEmail" required="true" placeholder="Email *">
 
-                <label for="yourWebsite">Your Website:</label>
+                <span class="sr-only"><label for="yourWebsite" span class="sr-only">Your Website:</label></span>
                 <input type="text" name="userWebsite" id="userWebsite" placeholder="Your Website">
         
                 <textarea name="userComment" id="userComment" cols="30" rows="10" placeholder="Comment"></textarea>
                 <button type="submit">Submit Comment</button>
             </form>
-        
+        </div>
 
     </section>
+</div>
 
 
     <!-- Footer (Contact)-->
@@ -165,17 +184,20 @@
             <p>Get all of our newest recipes immediately in your inbox!</p>
             
             <form action="email">
+                <span class="sr-only"><label for="yourEmail">Your Email:</label></span>
                 <input type="text" name="userEmail" id="userEmail" placeholder="Enter your email"><button type="submit"><a href="#"><i class="fas fa-long-arrow-alt-right"></i></a></button>
             </form>
             <hr>
 
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
+            <div class="socialMedia"> 
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
         </div>
     </div>
     
-        <p>Copyrights Ⓒ 2021 by <a href="#">POLAR</a> All Rights Reserved.</p>
+    <p class="copyright">Copyrights Ⓒ 2021 by <span class="polar"><a href="#">Polar</a></span>. All Rights Reserved.</p>
     </footer>
 </div>
     

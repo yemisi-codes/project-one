@@ -7,47 +7,70 @@
     @include headerContent(url(../assets/contact-1.jpeg));
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 a {
     text-decoration: none;
 }
 
-input,
-textarea {
-    font-family: $bodyText;
-    background: $backgroundColor;
-    color: $bodyTextColor;
-    border: none;
+
+// Section One
+.sectionOneContact h3 {
+    @include headerFont(20px);
+    margin-bottom: 20px;
 }
 
-textarea {
-    outline: none;
-    resize: none;
-    overflow: auto;
+.sectionOneContact h4 {
+    @include headerFont(17px);
+    margin: 30px 0px;
+}
+
+.sectionOneContact p {
+    color: $bodyTextColor;
+    font-family: $bodyText;
 }
 
 .sectionOneContact {
     display: flex;
     flex-wrap: wrap;
-}
-
-.sectionOneContact h3 {
-        @include headerFont(20px);
-}
-
-.sectionOneContact h4 {
-    @include headerFont(17px);
+    padding-top: 50px;
+    padding-bottom: 70px;
 }
 
 .sectionOneContact__form {
-    width: 70%;
+    width: calc(70% - 60px);
+    margin-left: 60px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-aside {
-    width: 25%;
+.sectionOneContact input,
+.sectionOneContact textarea {
+    font-family: $bodyText;
+    background: $backgroundColor;
+    color: $bodyTextColor;
+    border: none;
+    padding: 10px 15px;
 }
 
-.sectionOneContact__form button {
-    width: 40%;
+.sectionOneContact input {
+    margin-bottom: 15px;
+    margin-right: 3px;
+}
+
+.sectionOneContact textarea {
+    outline: none;
+    resize: none;
+    overflow: auto;
+    width: calc(90% - 60px);
+    margin-top: 15px;
+}
+
+.sectionOneContact button {
+    width: 150px;
     background: white;
     color: $mediumGreen;
     font-family: $headerFont;
@@ -55,14 +78,26 @@ aside {
     font-size: 12px;
     text-transform: uppercase;
     border: none;
-   
 }
 
-.sectionOneContact aside {
+.sectionOne__contactDetails {
+    width: 25%;
     background: $backgroundColor;
+    padding: 100px 50px;
+    margin: -50px 0px -70px 0px;
 }
 
-.sectionOneContact p {
-    color: $bodyTextColor;
-    font-family: $bodyText;
+.workingDays {
+    @include headerFont(13px);
+    color: $primary;
+}
+
+.workingTime {
+    color: $primary;
+    font-size: 13px;
+    margin-left: 5px;
+}
+
+.notWorking {
+    font-style: italic;
 }

@@ -27,12 +27,10 @@
                 <li class="nav__link"><a href="blog.html">Blog</a></li>
                 <li class="nav__link"><a href="#">Shop</a></li>
                 <li class="nav__link"><a href="contact.html">Contact</a></li>
-                <a><i class="fas fa-shopping-bag"></i></div></a>
-                <a><i class="fas fa-search"></i></a>
+                <li class="nav__link"><a><i class="fas fa-shopping-bag"></i></div></a></li>
+                <li class="nav__link"><a><i class="fas fa-search"></i></a></li>
             </ul>
         </nav>
-
-        
     </header>
       
 
@@ -56,33 +54,46 @@
     <!-- Section Two -->
     <section class="sectionTwo">
         <div class="sectionTwo__container">
-            <!-- <div class="SectionTwo__photo"> -->
+            <div class="SectionTwo__photo">
                 <img src="assets/home-3.jpeg" alt="taco with lime wedge beside">
-            <!-- </div> -->
+            </div>
             <div class="sectionTwo__text">
-                <div class="sectionTwo__icon"><i class="fas fa-lemon"></i></div>
-                <h3>Vegetarian</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, nam exercitationem quas voluptatum corrupti incidunt?</p>
+                <div class="sectionTwo__content">
+                    <div class="sectionTwo__icon"><i class="fas fa-lemon"></i></div>
+                    <h3>Vegetarian</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, nam exercitationem quas voluptatum corrupti incidunt?</p>
+                </div>
 
-                <div class="sectionTwo__icon"><i class="fas fa-coffee"></i></div>
-                <h3>Desserts</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure tempore laborum adipisci cum id mollitia!</p>
+                <div class="sectionTwo__content">
+                    <div class="sectionTwo__icon"><i class="fas fa-utensils"></i></div>
+                    <h3>Appetizers</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias labore expedita blanditiis voluptates, ipsum quis!</p>
+                </div>
 
-                <div class="sectionTwo__icon"><i class="fas fa-leaf"></i></div>
-                <h3>Salads</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, nulla? At consequuntur ipsa ullam et.</p>
+                <div class="sectionTwo__content">
+                    <div class="sectionTwo__icon"><i class="fas fa-coffee"></i></div>
+                    <h3>Desserts</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure tempore laborum adipisci cum id mollitia!</p>
+                </div>
+                
+                <div class="sectionTwo__content">
+                    <div class="sectionTwo__icon"><i class="fas fa-glass-martini"></i></div>
+                    <h3>Drinks</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor ab minima ullam perferendis commodi rem!</p>
+                </div>
 
-                <div class="sectionTwo__icon"><i class="fas fa-utensils"></i></div>
-                <h3>Appetizers</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias labore expedita blanditiis voluptates, ipsum quis!</p>
+                <div class="sectionTwo__content">
+                    <div class="sectionTwo__icon"><i class="fas fa-leaf"></i></div>
+                    <h3>Salads</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, nulla? At consequuntur ipsa ullam et.</p>
+                </div>
 
-                <div class="sectionTwo__icon"><i class="fas fa-glass-martini"></i></div>
-                <h3>Drinks</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor ab minima ullam perferendis commodi rem!</p>
-
-                <div class="sectionTwo__icon"><i class="fas fa-utensil-spoon"></i></div>
-                <h3>Side Dishes</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae facilis odit vero voluptatem facere. Minus?</p>
+                
+                <div class="sectionTwo__content">
+                    <div class="sectionTwo__icon"><i class="fas fa-utensil-spoon"></i></div>
+                    <h3>Side Dishes</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae facilis odit vero voluptatem facere. Minus?</p>
+                </div>
             </div>
         </div>
     </section>
@@ -90,13 +101,15 @@
     <!-- Section Three (Our Restaurants) -->
     <section class="sectionThree">
         <div class="sectionThree__logo"> 
-            <img src="assets/home-circle-text.png" alt="">
+            <img src="assets/home-circle-text.png" alt="logo">
         </div>
-        <div>
-            <img src="assets/home-4.jpeg" alt="orange dining chairs and tables">
-            <h2>Our Restaurants</h2>
-            <span class="greenLine"><hr></span>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus debitis officia placeat est mollitia eaque officiis vel.</p>
+        <div class="sectionThree__content">
+            <img class="diningImg" src="assets/home-4.jpeg" alt="orange dining chairs and tables">
+            <div class="sectionThree__text">
+                <h2>Our Restaurants</h2>
+                <span class="greenLine"><hr></span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, perspiciatis molestiae accusamus incidunt ab assumenda consequatur commodi cupiditate dolor nam dolorum ut dicta vero eligendi, tenetur distinctio alias necessitatibus ratione!</p>
+            </div>
         </div>
     </section>
 
@@ -116,12 +129,14 @@
     <section class="sectionFive">
         <h2>Hungry Clients</h2>
         <span class="greenLine"><hr></span>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis alias ad, voluptate maiores perspiciatis eligendi tempore velit esse nihil odit exercitationem dolorem libero quibusdam magnam atque impedit harum tempora saepe?</p>
-        <div class="leftArrow">
-            <i class="fas fa-chevron-left"></i>
-        </div>
-        <div class='rightArrow'>
-            <i class="fas fa-chevron-right"></i>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At perspiciatis ut ratione veniam architecto nesciunt itaque magni id molestiae quod nostrum dolore amet pariatur sapiente laboriosam quaerat quo laborum ab expedita, consequuntur dolores blanditiis! Esse vitae velit nulla facere cumque?</p>
+        <div class="arrowContainer">
+            <div class="leftArrow">
+                <i class="fas fa-chevron-left"></i>
+            </div>
+            <div class="rightArrow">
+                <i class="fas fa-chevron-right"></i>
+            </div>
         </div>
     </section>
 
@@ -159,17 +174,20 @@
             <p>Get all of our newest recipes immediately in your inbox!</p>
             
             <form action="email">
+                <span class="sr-only"><label for="yourEmail">Your Email:</label></span>
                 <input type="text" name="userEmail" id="userEmail" placeholder="Enter your email"><button type="submit"><a href="#"><i class="fas fa-long-arrow-alt-right"></i></a></button>
             </form>
             <hr>
 
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
+            <div class="socialMedia"> 
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
         </div>
     </div>
     
-        <p>Copyrights Ⓒ 2021 by <a href="#">POLAR</a> All Rights Reserved.</p>
+    <p class="copyright">Copyrights Ⓒ 2021 by <span class="polar"><a href="#">Polar</a></span>. All Rights Reserved.</p>
     </footer>
 </div>
 </body>

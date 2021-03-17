@@ -8,12 +8,21 @@
     @include headerContent(url(../assets/blog-1.jpeg));
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 hr {
     color: $backgroundColor;
-    width: 90%;
+    width: 100%;
     height: 1px;
 }
 
+.blogWrapper {
+    margin-left: 100px;
+    margin-right: 100px;
+}
 // Section One - Pineapple Chicken Recipe
 .sectionOneBlog {
     padding: 20px;
@@ -29,6 +38,10 @@ hr {
     font-size: 15px;
 }
 
+.recipeP {
+    margin-bottom: 20px;
+}
+
 .sectionOneBlog h4 {
     @include headerFont(15px);
     color: $primary;
@@ -39,10 +52,25 @@ hr {
     text-decoration: none;
 }
 
+.tags,
+.share {
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.tags p {
+    margin: 0px 10px;
+}
+
+.socialMediaIcon {
+    margin: 0px 10px;
+}
+
 // Section Two - Author Bio
 .sectionTwoBlog {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 30px;
 }
 
 .sectionTwoBlog h4,
@@ -56,22 +84,21 @@ hr {
     color: $bodyTextColor;
 }
 
-.sectionTwoBlog__img {
-    width: 25%;
-}
 
 .sectionTwoBlog__text {
     background: $backgroundColor;
     width: 75%;
+    margin-left: 30px;
+    padding: 30px;
 }
 
 // Section Three - Related Posts
-.sectionThreeBlog {
+.sectionThreeBlog__container {
     display: flex;
     flex-wrap: wrap;
 }
 .sectionThreeBlog h3 {
-    @include headerFont(17px);
+    @include headerFont(16px);
     color: $primary;
 }
 
@@ -83,12 +110,14 @@ hr {
 .sectionThreeBlog__containerOne,
 .sectionThreeBlog__containerTwo,
 .sectionThreeBlog__containerThree {
-    width: 30%;
+    width: 26%;
+    margin: 20px;
 }
 
 .sectionThreeBlog p {
     font-family: $bodyText;
     color: $bodyTextColor;
+    font-size: 14px;
 }
 .sectionThreeBlog span {
     font-family: $headerFont;
@@ -96,24 +125,44 @@ hr {
 }
 
 // Section Four (Comments and Form)
-.sectionFourBlog__text {
-    background: $backgroundColor;
+.sectionFourBlog__text,
+.sectionFourBlog p {
+    
     color: $primary;
     font-family: $bodyText;
 }
 
+.sectionFourBlog__text {
+    background: $backgroundColor;
+    width: 75%;
+    padding: 20px;
+    margin-left: 20px;
+}
+
+
+
 .sectionFourBlog__comment {
     display: flex;
     flex-wrap: wrap;
+    position: relative;
+    padding: 10px;
 }
+.sectionFourBlog__comment::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-right: 15px solid $backgroundColor;
+    border-bottom: 15px solid transparent;
+    left: 87px;
+}
+    
 
-.sectionFourBlog__text {
-    width: 75%;
-}
-
-.sectionFourBlog__img {
-    width: 25%;
-}
+// .sectionFourBlog__img {
+//     // width: 25%;
+// }
 
 .name,
 .date {
@@ -124,18 +173,37 @@ hr {
     font-family: $bodyText;
 }
 
-input,
-textarea {
-    font-family: $bodyText;
-    color: $backgroundColor;
+.sectionFourBlog h4 {
+    margin-top: 30px;
 }
 
-textarea {
+.blogForm {
+    display: flex;
+    flex-wrap: wrap;
+}
+.blogForm input,
+.blogForm textarea {
+    font-family: $bodyText;
+    border: 1px solid #999999;
+    background: white;
+}
+
+.blogForm input {
+    margin-right: 10px;
+    margin-top: 20px;
+    width: calc(33% - 10px);
+}
+
+.blogForm textarea {
     outline: none;
     resize: none;
     overflow: auto;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 20px;
 }
 
 .sectionFourBlog button {
-    @include greenButton(40%);
+    @include greenButton(150px);
+    margin-bottom: 100px;
 }
