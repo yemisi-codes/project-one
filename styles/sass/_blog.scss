@@ -23,6 +23,7 @@ hr {
     margin-left: 100px;
     margin-right: 100px;
 }
+
 // Section One - Pineapple Chicken Recipe
 .sectionOneBlog {
     padding: 20px;
@@ -87,9 +88,13 @@ hr {
 
 .sectionTwoBlog__text {
     background: $backgroundColor;
-    width: 75%;
-    margin-left: 30px;
+    width: calc(75% - 5px);
+    margin-left: 5px;
     padding: 30px;
+}
+
+.sectionTwoBlog__img {
+    width: calc(25% - 30px);
 }
 
 // Section Three - Related Posts
@@ -110,7 +115,7 @@ hr {
 .sectionThreeBlog__containerOne,
 .sectionThreeBlog__containerTwo,
 .sectionThreeBlog__containerThree {
-    width: 26%;
+    width: calc(26% - 40px);
     margin: 20px;
 }
 
@@ -134,12 +139,10 @@ hr {
 
 .sectionFourBlog__text {
     background: $backgroundColor;
-    width: 75%;
+    width: calc(75% - 20px);
     padding: 20px;
     margin-left: 20px;
 }
-
-
 
 .sectionFourBlog__comment {
     display: flex;
@@ -159,11 +162,6 @@ hr {
     left: 87px;
 }
     
-
-// .sectionFourBlog__img {
-//     // width: 25%;
-// }
-
 .name,
 .date {
     font-family: $headerFont;
@@ -207,3 +205,134 @@ hr {
     @include greenButton(150px);
     margin-bottom: 100px;
 }
+
+
+// Media Queries 
+
+@media (max-width: 990px) {
+
+    .sectionThreeBlog h3 {
+        font-size: 14px;
+    }
+
+    .blogForm input {
+        width: calc(30% - 10px);
+    }
+}
+
+@media (max-width: 917px) {
+
+    .sectionFourBlog p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 875px) {
+
+    .sectionThreeBlog h3 {
+        font-size: 13px;
+    }
+    .sectionThreeBlog__containerOne,
+    .sectionThreeBlog__containerTwo,
+    .sectionThreeBlog__containerThree {
+    width: calc(30% - 40px);
+    }
+}
+
+@media (max-width: 763px) {
+
+    .sectionTwoBlog p {
+        font-size: 13px;
+    }
+
+    .sectionThreeBlog h3 {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 728px) {
+    .sectionTwoBlog__text {
+        margin-left: 10px;
+        }
+}
+
+@media (max-width: 696px) {
+
+    .sectionThreeBlog__containerOne,
+    .sectionThreeBlog__containerTwo,
+    .sectionThreeBlog__containerThree {
+        width: calc(30% - 20px);
+        margin: 10px;
+    }
+}
+
+@media (max-width: 598px) {
+    .sectionThreeBlog__container {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .sectionThreeBlog h4 {
+        text-align: center;
+    }
+    .sectionThreeBlog h3 {
+        font-size: 15px;
+    }
+
+    .sectionThreeBlog__containerOne,
+    .sectionThreeBlog__containerTwo,
+    .sectionThreeBlog__containerThree {
+        width: calc(100% - 20px);
+    }
+}
+
+@media (max-width: 593px) {
+
+    .sectionTwoBlog__text {
+        width: calc(80% - 10px);
+        }
+}
+
+
+@media (max-width: 579px) {
+    .sectionThreeBlog h3 {
+        font-size: 11px;
+    }
+
+}
+
+@media (max-width: 510px) {
+
+    .sectionOneBlog h2 {
+        font-size: 24px;
+    }
+    .sectionOneBlog p {
+        font-size: 13px;
+    }
+
+    .share {
+        padding-top: 10px;
+    }
+
+    .blogForm input,
+    .blogForm textarea {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .blogWrapper {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+    .sectionTwoBlog__text {
+    
+        width: calc(70% - 10px);
+       
+    }
+    
+    .sectionTwoBlog__img {
+        width: calc(30% - 10px);
+    }
+}
+

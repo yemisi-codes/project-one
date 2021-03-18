@@ -20,7 +20,8 @@ nav {
                     text-transform: uppercase;
                     color: $primary;
                     font-family: $headerFont;
-                    margin: 10px;
+                    margin-right: 10px;
+                
 
                     &:hover {
                         color: $mediumGreen;
@@ -30,4 +31,57 @@ nav {
         }
     }
 
+.search {
+    position: relative;
+}
 
+.fas fa-search {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+
+.hamburgerMenu {
+    visibility: hidden;
+    color: $primary;
+    font-size: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-right: 40px;    
+}
+
+
+// Media Queries 
+
+@media (max-width: 885px) {
+    header a {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 770px) {
+    header h1 {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 710px) {
+    header ul {
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header ul {
+        visibility: hidden;
+    }
+    .fas fa-search {
+        visibility: hidden;
+    }
+    .hamburgerMenu {
+        visibility: visible;
+        margin-right: 60px;
+    }
+}

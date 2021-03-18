@@ -17,7 +17,6 @@
        <div class="wrapper">
         <h1>Delicious</h1>
 
-     
         <nav class="header__nav">
             <ul>
                 <li class="nav__link"><a href="#">Home</a></li>
@@ -28,12 +27,14 @@
                 <li class="nav__link"><a href="#">Shop</a></li>
                 <li class="nav__link"><a href="contact.html">Contact</a></li>
                 <li class="nav__link"><a><i class="fas fa-shopping-bag"></i></div></a></li>
-                <li class="nav__link"><a><i class="fas fa-search"></i></a></li>
+                <li class="search"><a><i class="fas fa-search"></i></a></li>
             </ul>
         </nav>
+        <a class="hamburgerMenu">
+            <i class="fas fa-bars"></i>
+        </a>
     </header>
       
-
     <!-- Section One -->
     <section class="sectionOne">
         <div class="sectionOne__container">
@@ -59,40 +60,61 @@
             </div>
             <div class="sectionTwo__text">
                 <div class="sectionTwo__content">
-                    <div class="sectionTwo__icon"><i class="fas fa-lemon"></i></div>
-                    <h3>Vegetarian</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, nam exercitationem quas voluptatum corrupti incidunt?</p>
+                    <div class="sectionTwo__icon">
+                        <i class="fas fa-lemon"></i></div>
+                    <div class="menuItem">
+                        <h3>Vegetarian</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, nam exercitationem quas voluptatum corrupti incidunt?</p>
+                    </div>
                 </div>
 
                 <div class="sectionTwo__content">
-                    <div class="sectionTwo__icon"><i class="fas fa-utensils"></i></div>
-                    <h3>Appetizers</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias labore expedita blanditiis voluptates, ipsum quis!</p>
+                    <div class="sectionTwo__icon">
+                        <i class="fas fa-utensils"></i></div>
+                    <div class="menuItem">
+                        <h3>Appetizers</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias labore expedita blanditiis voluptates, ipsum quis!</p>
+                    </div>
                 </div>
 
                 <div class="sectionTwo__content">
-                    <div class="sectionTwo__icon"><i class="fas fa-coffee"></i></div>
-                    <h3>Desserts</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure tempore laborum adipisci cum id mollitia!</p>
+                    <div class="sectionTwo__icon">
+                        <i class="fas fa-coffee"></i></div>
+                    <div class="menuItem">
+                        <h3>Desserts</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure tempore laborum adipisci cum id mollitia!</p>
+                    </div>
                 </div>
                 
                 <div class="sectionTwo__content">
-                    <div class="sectionTwo__icon"><i class="fas fa-glass-martini"></i></div>
-                    <h3>Drinks</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor ab minima ullam perferendis commodi rem!</p>
+                    <div class="sectionTwo__icon">
+                        <i class="fas fa-glass-martini"></i>
+                    </div>
+                    <div class="menuItem">
+                        <h3>Drinks</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor ab minima ullam perferendis commodi rem!</p>
+                    </div>
                 </div>
 
                 <div class="sectionTwo__content">
-                    <div class="sectionTwo__icon"><i class="fas fa-leaf"></i></div>
-                    <h3>Salads</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, nulla? At consequuntur ipsa ullam et.</p>
+                    <div class="sectionTwo__icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <div class="menuItem">
+                        <h3>Salads</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, nulla? At consequuntur ipsa ullam et.</p>
+                    </div>
                 </div>
 
                 
                 <div class="sectionTwo__content">
-                    <div class="sectionTwo__icon"><i class="fas fa-utensil-spoon"></i></div>
-                    <h3>Side Dishes</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae facilis odit vero voluptatem facere. Minus?</p>
+                    <div class="sectionTwo__icon">
+                        <i class="fas fa-utensil-spoon"></i>
+                    </div>
+                    <div class="menuItem">
+                        <h3>Side Dishes</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae facilis odit vero voluptatem facere. Minus?</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -100,11 +122,13 @@
 
     <!-- Section Three (Our Restaurants) -->
     <section class="sectionThree">
-        <div class="sectionThree__logo"> 
-            <img src="assets/home-circle-text.png" alt="logo">
-        </div>
         <div class="sectionThree__content">
-            <img class="diningImg" src="assets/home-4.jpeg" alt="orange dining chairs and tables">
+            <div class="diningImg">
+                <div class="sectionThree__logo"> 
+                    <img src="assets/home-circle-text.png" alt="logo">
+                </div>
+                <img src="assets/home-4.jpeg" alt="orange dining chairs and tables">
+            </div>
             <div class="sectionThree__text">
                 <h2>Our Restaurants</h2>
                 <span class="greenLine"><hr></span>
@@ -172,13 +196,11 @@
         <div class="footer__form">
             <h3>Subscribe Now</h3>
             <p>Get all of our newest recipes immediately in your inbox!</p>
-            
             <form action="email">
                 <span class="sr-only"><label for="yourEmail">Your Email:</label></span>
                 <input type="text" name="userEmail" id="userEmail" placeholder="Enter your email"><button type="submit"><a href="#"><i class="fas fa-long-arrow-alt-right"></i></a></button>
             </form>
             <hr>
-
             <div class="socialMedia"> 
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></a>

@@ -78,77 +78,65 @@ img {
 // Section Two
 .sectionTwo__container {
     display: grid;
-    grid-template-columns: 50% 50%;
-    
-}
-
-.sectionTwo__text {
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
-
-.sectionTwo img {
-    width: 100%;
-}
-
-.sectionTwo__icon {
-    color: $primary;
-    size: 50px;
-    position: relative;
-}
-
-// .fas fa-lemon,
-// .fas fa-utensils,
-// .fas fa-coffee,
-// .fas fa-glass-martini,
-// .fas fa-leaf,
-// .fas fa-utensil-spoon {
-//     color: $primary;
-//     size: 50px;
-// }
-
-
-.sectionTwo__content {
-    width: 90%;
+    grid-template-columns: 50% 50%; 
 }
 
 .sectionTwo h3 {
     @include headerFont(15px);
 }
 
+.sectionTwo img {
+    width: 100%;
+}
+
 .sectionTwo__text {
+    display: grid;
+    grid-template-columns: 50% 50%;
     background: $backgroundColor;
 }
 
+.sectionTwo__content {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;   
+    padding-top: 40px;
+}
+
+.menuItem {
+    width: calc(90% - 20px);
+    margin-left: 10px;
+}
+
+.sectionTwo__icon {
+    color: $primary;
+    width: calc(10% - 20px);
+    margin-left: 10px;
+}
+
+
 // Section Three - Our Restaurants 
 .sectionThree {
-    // position: relative;
     padding: 100px;
+}
+
+.sectionThree__content {
     text-align: center;
+}
+
+.diningImg {
+    position: relative;
+    padding-bottom: 5%;
+    
 }
 
 .sectionThree__logo {
     z-index: 10;
     position: absolute;
-    top: 10;
-    // left: 200;
-    left: 5;
-    right: 0;
+    left: 700px;
     width: 20%;
+    bottom: 200px;
 }
 
-.sectionThree__content {
-  text-align: center;
-    
-}
-
-.diningImg {
-    padding-bottom: 5%;
-}
-
-// .sectionThree__text {
-    
-// }
 
 // Section Four - Gallery
 .sectionFour__container {
@@ -156,15 +144,6 @@ img {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 50% 50%;
 }
-
-// .imgOne,
-// .imgTwo,
-// .imgThree,
-// .imgFour,
-// .imgFive,
-// .imgSix {
-//     width: 100%;
-// }
 
 // Section Five - Hungry Clients
 .sectionFive {
@@ -212,4 +191,148 @@ img {
    
 }
 
+
+// Media Queries 
+
+@media (max-width: 1114px) {
+    .sectionTwo__icon {
+        width: calc(10% - 10px);
+        margin-left: 5px;
+    }
+
+    .menuItem {
+        width: calc(90% - 10px);
+        margin-left: 5px;
+    }
+
+    .sectionThree__logo {
+        left: 600px;
+    }
+    
+}
+
+@media (max-width: 1015px) {
+    .sectionTwo__content {
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 955px) {
+
+    .sectionTwo h3 {
+        font-size: 13px;
+    }
+    .sectionTwo p {
+        font-size: 11px;
+    }
+
+    .menuItem {
+        margin-left: 15px;
+    }
+    .sectionThree__logo {
+        left: 550px;
+    }
+
+    .sectionFive p::after {
+        margin: 30px;
+    }
+
+}
+
+@media (max-width: 830px) {
+    .sectionOne p {
+        font-size: 12px;
+    }
+    .recipeButton {
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 775px) {
+    .sectionThree__logo {
+        left: 450px;
+        bottom: 250px;
+    }
+}
+
+@media (max-width: 750px) {
+    .recipeButton {
+        padding-top: 0%;
+    }
+
+    .sectionFive p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 680px) {
+    .sectionOne__text h2,
+    .sectionThree h2,
+    .sectionFive h2 {
+        font-size: 18px;
+    }
+
+    .sectionFive p::after {
+        margin: 50px;
+    }
+}
+
+@media (max-width: 665px) {
+    .sectionTwo h3 {
+        font-size: 12px;
+    }
+    .sectionTwo p {
+        font-size: 10px;
+    }
+}
+
+
+@media (max-width: 640px) {
+    .sectionOne__container,
+    .sectionTwo__container {
+        grid-template-columns: 100%;
+    }
+
+    .sectionTwo__content {
+        padding-bottom: 20px;
+    }
+
+    .sectionThree__logo {
+        left: 400px;
+        bottom: 200px;
+    }
+}
+
+
+@media (max-width: 590px) {
+    .sectionThree__logo {
+        left: 300px;
+    }
+    .sectionFive p {
+        font-size: 13px;
+    }
+
+.sectionFive p::before {
+    margin: 8px;
+    }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    .sectionTwo__text {
+        grid-template-columns: 100%;
+    }
+    .sectionTwo p {
+        font-size: 12px;
+    }
+
+    .sectionThree__logo {
+        left: 250px;
+        bottom: 150px;
+    }
+
+    .sectionThree p {
+        font-size: 13px;
+    }
+}
 

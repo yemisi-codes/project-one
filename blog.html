@@ -16,26 +16,28 @@
          <!-- Wrapper -->
         <div class="wrapper">
         <h1>Delicious</h1>
-    <nav class="header__nav">
-        <ul>
-            <li class="nav__link"><a href="index.html">Home</a></li>
-            <li class="nav__link"><a href="#">About</a></li>
-            <li class="nav__link"><a href="#">Recipes</a></li>
-            <li class="nav__link"><a href="#">Nutrition</a></li>
-            <li class="nav__link"><a href="#">Blog</a></li>
-            <li class="nav__link"><a href="#">Shop</a></li>
-            <li class="nav__link"><a href="contact.html">Contact</a></li>
-            <li class="nav__link"><a><i class="fas fa-shopping-bag"></i></div></a></li>
-            <li class="nav__link"><a><i class="fas fa-search"></i></a></li>
-        </ul>
-    </nav>
+        <nav class="header__nav">
+            <ul>
+                <li class="nav__link"><a href="index.html">Home</a></li>
+                <li class="nav__link"><a href="#">About</a></li>
+                <li class="nav__link"><a href="#">Recipes</a></li>
+                <li class="nav__link"><a href="#">Nutrition</a></li>
+                <li class="nav__link"><a href="#">Blog</a></li>
+                <li class="nav__link"><a href="#">Shop</a></li>
+                <li class="nav__link"><a href="contact.html">Contact</a></li>
+                <li class="nav__link"><a><i class="fas fa-shopping-bag"></i></div></a></li>
+                <li class="nav__link"><a><i class="fas fa-search"></i></a></li>
+            </ul>
+        </nav>
+        <a class="hamburgerMenu">
+            <i class="fas fa-bars"></i>
+        </a>
 </header>
 
 <!-- Section One (Pineapple Chicken Recipe)
 -->
 <div class="blogWrapper"> 
     <section class="sectionOneBlog">
-        <!-- <div></div> -->
             <h2>Pineapple Chicken</h2>
             <p class="recipeP">Posted at July 11, 2020 | by Admin | in <a href="#">Recipes</a></p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque blanditiis soluta fuga corrupti aut consequuntur aliquam ipsam facilis? Voluptatem, minima.</p>
@@ -49,10 +51,10 @@
             <p class="recipeP">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque rem sed nam? Itaque, dignissimos iure! Atque eum debitis dolorum laborum.</p>
             <hr>
             <div class="tags">
-            <h4>Tags:</h4> <p>Recipes, Chicken, Pineapple, Mexican</p>
+                <h4>Tags:</h4> <p>Recipes, Chicken, Pineapple, Mexican</p>
             </div>
             <div class="share">
-            <h4>Share:</h4>
+                <h4>Share:</h4>
             <div class="socialMediaIcon">
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
             </div>
@@ -62,9 +64,7 @@
             <div class="socialMediaIcon">
                 <a href="#"><i class="fab fa-instagram"></i></a>
             </div>
-            </div>
-            
-        <!-- </div> -->
+    
     </section>
 
     <!-- Section Two (Author bio) -->
@@ -85,22 +85,22 @@
     <section class="sectionThreeBlog">
         <h4>Related Posts</h4>
         <div class="sectionThreeBlog__container">
-        <div class="sectionThreeBlog__containerOne">
-            <img src="assets/blog-3.jpeg" alt="pink cake on platter">
-            <h3>How to Bake the Perfect Cake</h3>
-            <p>July 11, 2020 | by <span>Admin</span> | in <span><a href="#">Recipes</a></span></p>
+            <div class="sectionThreeBlog__containerOne">
+                <img src="assets/blog-3.jpeg" alt="pink cake on platter">
+                <h3>How to Bake the Perfect Cake</h3>
+                <p>July 11, 2020 | by <span>Admin</span> | in <span><a href="#">Recipes</a></span></p>
+            </div>
+            <div class="sectionThreeBlog__containerTwo">
+                <img src="assets/blog-4.jpeg" alt="floral cupcakes">
+                <h3>Floral Cupcakes</h3>
+                <p>July 19, 2020 | by <span>Admin</span> | in <span><a href="#">Recipes</a></span></p>
+            </div>
+            <div class="sectionThreeBlog__containerThree">
+                <img src="assets/blog-5.jpeg" alt="smoked salmon dish">
+                <h3>Single Post with Image</h3>
+                <p>July 22, 2020 | by <span>Admin</span> | in <span><a href="#">Recipes</a></span></p>
+            </div>
         </div>
-        <div class="sectionThreeBlog__containerTwo">
-            <img src="assets/blog-4.jpeg" alt="floral cupcakes">
-            <h3>Floral Cupcakes</h3>
-            <p>July 19, 2020 | by <span>Admin</span> | in <span><a href="#">Recipes</a></span></p>
-        </div>
-        <div class="sectionThreeBlog__containerThree">
-            <img src="assets/blog-5.jpeg" alt="smoked salmon dish">
-            <h3>Single Post with Image</h3>
-            <p>July 22, 2020 | by <span>Admin</span> | in <span><a href="#">Recipes</a></span></p>
-        </div>
-    </div>
     </section>
     <hr>
 
@@ -127,24 +127,23 @@
                 <p class="date">July 17, 2020 at 15 hours ago</p>
             </div>
         </div>
-
             <h4>Leave a Comment</h4>
             <p>Your email address will not be published. Required fields are marked *</p>
             <div class="blogForm">
-            <form action="contact">
-                <span class="sr-only"><label for="name">Name:</label></span>
-                <input type="text" name="name" id="name" required="true" placeholder="Name *">
+                <form action="contact">
+                    <span class="sr-only"><label for="name">Name:</label></span>
+                    <input type="text" name="name" id="name" required="true" placeholder="Name *">
 
-                <span class="sr-only"><label for="email">Email:</label></span>
-                <input type="text" name="userEmail" id="userEmail" required="true" placeholder="Email *">
+                    <span class="sr-only"><label for="email">Email:</label></span>
+                    <input type="text" name="userEmail" id="userEmail" required="true" placeholder="Email *">
 
-                <span class="sr-only"><label for="yourWebsite" span class="sr-only">Your Website:</label></span>
-                <input type="text" name="userWebsite" id="userWebsite" placeholder="Your Website">
+                    <span class="sr-only"><label for="yourWebsite" span class="sr-only">Your Website:</label></span>
+                    <input type="text" name="userWebsite" id="userWebsite" placeholder="Your Website">
         
-                <textarea name="userComment" id="userComment" cols="30" rows="10" placeholder="Comment"></textarea>
-                <button type="submit">Submit Comment</button>
-            </form>
-        </div>
+                    <textarea name="userComment" id="userComment" cols="30" rows="10" placeholder="Comment"></textarea>
+                    <button type="submit">Submit Comment</button>
+                </form>
+            </div>
 
     </section>
 </div>
