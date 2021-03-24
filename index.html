@@ -212,5 +212,16 @@
     <p class="copyright">Copyrights Ⓒ 2021 by <span class="polar"><a href="#">Polar</a></span>. All Rights Reserved.</p>
     </footer>
 </div>
+<script>
+   const heading = document.querySelectorAll("h2");
+   const headingArray = Array.from(heading);
+   const changeColor = heading.style.color = "#64A604";
+
+   headingArray.forEach(h2 => {
+       heading.addEventListener("mouseover", changeColor);
+       
+   });
+ 
+</script>
 </body>
 </html>
